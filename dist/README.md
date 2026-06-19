@@ -9,7 +9,7 @@ Auto-generated bundles for AI coding tools other than Claude Code. Each subdirec
 | `aider/` | `CONVENTIONS.md` + `read-files.txt` + `.aider.conf.yml` | Aider |
 | `continue/` | `config.snippet.yaml` | Continue.dev's `~/.continue/config.yaml` |
 | `openclaw/` | `SKILL.md` with OpenClaw frontmatter (name + description + metadata) | OpenClaw — drop into `~/.openclaw/workspace/skills/open-forge/` |
-| `hermes/` | `SKILL.md` with agentskills.io open-standard frontmatter | Hermes-Agent — drop into `~/.hermes/skills/open-forge/` |
+| `hermes/` | `SKILL.md` with agentskills.io open-standard frontmatter | Hermes-Agent — drop into `~/.hermes/skills/` |
 | `generic/` | `open-forge-bundle.md` (single-file concatenation) | Any LLM agent with tool use |
 
 ## Regenerate after upstream changes
@@ -17,7 +17,7 @@ Auto-generated bundles for AI coding tools other than Claude Code. Each subdirec
 The bundles are concatenations of the canonical content (`CLAUDE.md`, `plugins/open-forge/skills/open-forge/SKILL.md`, `references/modules/credentials.md`, `references/modules/feedback.md`). When those change, regenerate via:
 
 ```bash
-./scripts/build-dist.sh all       # all five platforms
+./scripts/build-dist.sh all       # all supported platforms
 ./scripts/build-dist.sh codex     # just one
 ```
 
